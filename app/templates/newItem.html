@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="modal-dialog col-md-5">
+	<h1>New Ad</h1>
+	<form name="newAdForm">
+            <fieldset>
+                <label for="firstName">First Name:</label>
+                <input type="text" ng-value="{{item.firstName || ''}}" required ng-model="item.firstName" />
+                <br />
+                <label for="lastName">Last Name:</label>
+                <input type="text" ng-value="{{item.lastName || ''}}" required ng-model="item.lastName" />
+                <br />
+                <label for="country">Country:</label>
+                <input type="text" ng-value="{{item.country || ''}}" required ng-model="item.country" />
+                <br />
+                <label for="occupation">Occupation:</label>
+                <input type="text" ng-value="{{item.occupation || ''}}" required ng-model="item.occupation" />
+            </fieldset>
+                <button type="button" class="btn btn-default" ng-click="thisItem !== undefined? editItem(item):createItem(item)">
+                    {{thisItem !== undefined? "Edit":"Create"}}
+                </button>
+            <button type="button" class="btn btn-default" ng-click="cancelAdd()">Cancel</button>
+	</form>
+    </div>
+</div>

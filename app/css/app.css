@@ -1,0 +1,81 @@
+.ad {
+    margin-bottom: 10px;
+}
+
+.noStyleList {
+    list-style: none;
+}
+
+.adTitle, .username {
+/*    width: 70%;*/
+    display: block
+/*    margin-top: 0px;*/
+}
+
+.adDate {
+    position: absolute;
+    right: 5%;
+}
+
+/*.filters {
+    position: absolute;
+    right: 5%;
+}*/
+
+.rightSide {
+    position: relative;
+    width: 60%;
+    right: -40%;
+}
+
+.part {
+    margin-bottom: 4%;
+}
+
+.login {
+    margin-left: 10%;
+}
+
+#navbar {
+    color: #265a88;
+}
+
+#downNewAdSection {
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+.statusFilters {
+    list-style: none;
+}
+
+#listaOfStatusFilters {
+    width: 90%;
+    margin-left: -20%;
+}
+
+.funcButton {
+    margin-left: 2%;
+}
+
+.items {
+  border-collapse: collapse;
+}
+
+.items th {
+  border-bottom: 1px solid;
+}
+.items td, .friends th {
+  border-left: 1px solid;
+  padding: 5px 10px;
+}
+.items td:first-child, .friends th:first-child {
+  border-left: none;
+}
+
+.sortorder:after {
+  content: '\25b2';   // BLACK UP-POINTING TRIANGLE
+}
+.sortorder.reverse:after {
+  content: '\25bc';   // BLACK DOWN-POINTING TRIANGLE
+}
